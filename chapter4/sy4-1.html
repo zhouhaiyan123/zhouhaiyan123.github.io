@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>css+div</title>
+
+<style type= "text/css" >
+#box{
+     width:1000px;
+     margin: 0   auto; 
+     background:#ACA6A6;
+	border: 3px solid #000000;
+	text-indent:2em;
+
+}
+#header{
+     height:200px;
+     background:red;
+	 text-align: left;
+	border: 2px solid #DED930;
+	margin:10px;
+	text-align: left;
+	color:#F3E144;
+	text-indent:2em;
+	
+}
+#logo{
+     height:50px;
+     width:23%;
+    margin-left:20px;
+	margin-top: 10px;
+	 float:left;
+	 background:#DDEC53;
+	border: 2px solid #000000;
+	text-align:left;
+	color:#000000;
+	text-indent:2em;
+}
+#banner{height:50px;
+     width:40%;
+     margin-right:20px;
+	margin-top: 10px;
+	 float:right;
+	background: #1F41E6;
+	border: 2px solid #000000;
+	color:white;
+	text-indent:2em;
+	}
+#menu{height:45px;
+	width:935px;
+	margin-left:20px;
+	background:#25391F;
+	border: 2px solid  #000000;
+	float: none;
+	margin-top: 100px;
+	color:white;
+	text-align: left;
+	text-indent:2em;
+	}
+#main{
+     height:600px;
+     border: 2px solid #DED930;
+     margin:10px;
+     background:#436028;
+	 color:white;
+	 text-align: left;
+	text-indent:2em;
+	
+	
+     
+}
+#sidebar{
+     height:400px;
+     width:200px;
+	margin-left: 20px;
+     margin-top:40px;/*设置元素跟其他元素的距离为20像素*/
+     float:left;/*设置浮动，实现多列效果，div+Css布局中很重要的*/
+     background:#2430D5;
+	border: 1px solid white;
+}
+#content{
+     height:400px;
+     width:600px;
+     margin-top: 40px;
+     float:right;
+	margin-right: 20px;
+     background:#29A7D2;
+	border: 1px solid white;
+}
+#footer{
+     height:40px;
+     background:red;
+     margin-top:20px;
+	border: 2px solid #D9EF31
+}
+.Clear{
+     clear:both;
+}
+</style>
+</head>
+ <title>实验4-2</title>
+<body>
+<div id= "box" > <p>div->box 包含下面3部分结构div(header,main,footer),布局网页宽度和居中</p>
+     <div id="header" ><p>div->header 包含下面3个结构div，布局头部高度和主要背景</p>
+         <div id= "logo" ><p>div->=logo</p></div>
+		 <div id="banner"><p>div->id=banner</p></div>
+		 <div id="menu"><p>div->id=menu</p></div>
+     </div>
+	
+     <div id= "main" ><p>div->id=main 包含下面2个div(sidebar,content)</p>
+         <div id= "sidebar" ><p>div->id=sidebar</p></div>
+         <div id= "content" ><p>div->id=content</p></div>
+     </div>
+     <div  class = "Clear" ></div>
+     <div id= "footer" >div->id=footer</div>
+</div>
+	</body>
+	</html>
